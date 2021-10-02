@@ -55,7 +55,7 @@
 
 <script>
 export default {
-  name: "Galeria",
+  name: "Midias",
   data() {
     return {
       cycle: true,

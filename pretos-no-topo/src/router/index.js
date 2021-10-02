@@ -1,31 +1,30 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Inicio from '../views/Inicio.vue';
-import Galeria from '../views/Galeria.vue';
+import Midias from '../views/Midias.vue';
 import Indicacoes from '../views/Indicacoes.vue';
 
 Vue.use(VueRouter);
 
-const routes = [
-  {
-    path: '/',
-    name: 'Inicio',
-    component: Inicio,
-  },
-  {
-    path: '/galeria',
-    name: 'Galeria',
-    component: Galeria,
-  },
-  {
-    path: '/indicacoes',
-    name: 'Indicacoes',
-    component: Indicacoes,
-  },
+const routes = [{
+        path: '/',
+        name: 'Inicio',
+        component: Inicio,
+    },
+    {
+        path: '/midias',
+        name: 'Midias',
+        component: Midias,
+    },
+    {
+        path: '/indicacoes',
+        name: 'Indicacoes',
+        component: Indicacoes,
+    },
 ];
 
 const router = new VueRouter({
-  routes,
+    routes,
 });
 
 export default router;
