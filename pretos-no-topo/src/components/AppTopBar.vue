@@ -2,13 +2,13 @@
   <div>
     <v-app-bar color="rgb(165,42,42,.9)" dense light height="80">
       <router-link to="/">
-        <img class="mr-3" :src="require('../assets/logo.png')" height="70"/>
+        <img class="mr-3" :src="require('../assets/logo.png')" height="70" />
       </router-link>
-      
+
       <v-spacer></v-spacer>
 
       <v-app-bar-nav-icon>
-        <v-menu left bottom>
+        <v-menu left bottom color="rgb(165,42,42,.9)" dense light height="80">
           <template v-slot:activator="{ on, attrs }">
             <v-btn icon v-bind="attrs" v-on="on">
               <v-icon>mdi-menu</v-icon>
@@ -16,10 +16,10 @@
           </template>
 
           <v-list class="app-top-bar">
-            <v-list-item-group
-              v-model="group"
-              active-class="brown"
-            >
+            <v-list-item-group 
+            v-model="group" 
+            active-class="app-text-selection">
+
               <router-link to="/">
                 <v-list-item>
                   <v-list-item-title>Início</v-list-item-title>
@@ -56,5 +56,10 @@ export default {
 <style scoped>
 .app-top-bar a {
   text-decoration: none;
+}
+.app-text-selection {
+ background-color: #A0522D;
+ color: #fff !important;
+
 }
 </style>
