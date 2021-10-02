@@ -1,6 +1,7 @@
 <template>
   <div>
     <v-app-bar color="indigo darken-3" dense dark>
+
       <v-toolbar-title>Pretos No Topo</v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -18,21 +19,21 @@
               v-model="group"
               active-class="indigo darken-3 text--lighten-3"
             >
-              <router-link to="/teste1">
+              <router-link to="/">
                 <v-list-item>
-                  <v-list-item-title>Teste</v-list-item-title>
+                  <v-list-item-title>Início</v-list-item-title>
                 </v-list-item>
               </router-link>
 
-              <router-link to="/teste">
+              <router-link to="/depoimentos">
                 <v-list-item>
-                  <v-list-item-title>Teste</v-list-item-title>
+                  <v-list-item-title>Depoimentos</v-list-item-title>
                 </v-list-item>
               </router-link>
 
-              <router-link to="/teste">
+              <router-link to="/indicacoes">
                 <v-list-item>
-                  <v-list-item-title>Teste</v-list-item-title>
+                  <v-list-item-title>Indicações</v-list-item-title>
                 </v-list-item>
               </router-link>
             </v-list-item-group>
