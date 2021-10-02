@@ -1,9 +1,10 @@
 <template>
   <div>
-    <v-app-bar color="indigo darken-3" dense dark>
-
-      <v-toolbar-title>Pretos No Topo</v-toolbar-title>
-
+    <v-app-bar color="rgb(165,42,42,.9)" dense light height="80">
+      <router-link to="/">
+        <img class="mr-3" :src="require('../assets/logo.png')" height="70"/>
+      </router-link>
+      
       <v-spacer></v-spacer>
 
       <v-app-bar-nav-icon>
@@ -17,7 +18,7 @@
           <v-list class="app-top-bar">
             <v-list-item-group
               v-model="group"
-              active-class="indigo darken-3 text--lighten-3"
+              active-class="brown"
             >
               <router-link to="/">
                 <v-list-item>

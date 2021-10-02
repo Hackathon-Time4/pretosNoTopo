@@ -1,11 +1,8 @@
 <template>
   <div>
-    <v-row>
-      <div v-for="card in cardTable" :key="card.id">
-            <Card :p="card"/>
-      </div>
+    <v-row class="justify-center">
+        <Card v-for="card in cardTable" :key="card.id" :p="card"/>
     </v-row>
-    <v-btn @click="teste()">Teste</v-btn>  
   </div>
 </template>
 
@@ -26,10 +23,6 @@ export default {
       this.cardTable = d;
   },
   methods: {
-
-    teste() {
-      console.log(this.cardTable)
-    },
     getProps(index) {
       return this.cardTable[index];
     },

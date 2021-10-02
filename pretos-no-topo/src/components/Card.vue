@@ -1,16 +1,18 @@
 <template>
   <v-card
-      class="mx-2 my-12 light-green card-outter"
+      class="mx-3 my-12 blue-grey lighten-5 card-outter justify-center"
       hover
       max-width="374"
       min-height="620"
+      outlined rounded
     >
     <v-img
+    contain
       height="250"
       :src="p.imagem"
     ></v-img>
 
-    <v-card-title class="">{{ p.nome }}</v-card-title>
+    <v-card-title>{{ p.nome }}</v-card-title>
     
     <v-card-actions>
       <v-btn
@@ -84,5 +86,4 @@ export default {
   left: 30%;
   bottom: 0;
 }
-
 </style>
