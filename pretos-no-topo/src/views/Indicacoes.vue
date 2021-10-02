@@ -1,12 +1,17 @@
 <template>
     <v-container>
-      <h2 class="text-h5 text-center mb-3 mt-5">Página de indicações</h2>
+      <card-grid/>
     </v-container>
 </template>
 
 <script>
+import CardGrid from '../components/CardGrid.vue'
+
 export default {
-  name: 'Indicacoes'
+  name: 'Indicacoes',
+  components: {
+    CardGrid
+  }
 }
 </script>
 
