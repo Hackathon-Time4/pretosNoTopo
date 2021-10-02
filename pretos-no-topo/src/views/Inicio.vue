@@ -1,4 +1,5 @@
 <template>
+  <div>
   <v-container fluid d-flex flex-column align-center class="container">
     <v-row>
       <v-img
@@ -31,9 +32,12 @@
         </v-img>
       </div>
     </v-row>
-    <v-row class="justify-center py-2">
+  </v-container>
+  <v-container>
+        <v-row class="justify-center py-2">
       <div class="video-wrapper">
         <iframe
+          class="responsive-iframe"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/n7DcbOpKUw8"
@@ -45,6 +49,7 @@
       </div>
     </v-row>
   </v-container>
+  </div>
 </template>
 
 <script>
@@ -54,6 +59,24 @@ export default {
 </script>
 
 <style scoped>
+
+.video-wrapper{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #flex {
   display: flex;
   justify-content: center;
