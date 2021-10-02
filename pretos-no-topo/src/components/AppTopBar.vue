@@ -26,9 +26,9 @@
                 </v-list-item>
               </router-link>
 
-              <router-link to="/galeria">
+              <router-link to="/midias">
                 <v-list-item>
-                  <v-list-item-title>Galeria</v-list-item-title>
+                  <v-list-item-title>Mídias</v-list-item-title>
                 </v-list-item>
               </router-link>
 
