@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Inicio from '../views/Inicio.vue';
-import Depoimentos from '../views/Depoimentos.vue';
+import Galeria from '../views/Galeria.vue';
 import Indicacoes from '../views/Indicacoes.vue';
 
 Vue.use(VueRouter);
@@ -13,9 +13,9 @@ const routes = [
     component: Inicio,
   },
   {
-    path: '/depoimentos',
-    name: 'Depoimentos',
-    component: Depoimentos,
+    path: '/galeria',
+    name: 'Galeria',
+    component: Galeria,
   },
   {
     path: '/indicacoes',
