@@ -20,21 +20,21 @@
               v-model="group"
               active-class="brown"
             >
-              <router-link to="/teste1">
+              <router-link to="/">
                 <v-list-item>
-                  <v-list-item-title>Teste</v-list-item-title>
+                  <v-list-item-title>Início</v-list-item-title>
                 </v-list-item>
               </router-link>
 
-              <router-link to="/teste">
+              <router-link to="/galeria">
                 <v-list-item>
-                  <v-list-item-title>Teste</v-list-item-title>
+                  <v-list-item-title>Galeria</v-list-item-title>
                 </v-list-item>
               </router-link>
 
-              <router-link to="/teste">
+              <router-link to="/indicacoes">
                 <v-list-item>
-                  <v-list-item-title>Teste</v-list-item-title>
+                  <v-list-item-title>Indicações</v-list-item-title>
                 </v-list-item>
               </router-link>
             </v-list-item-group>
